@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98A96113-A449-4CE8-BEEA-8D07FB671412}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AdminBilling.My.MyApplication</StartupObject>
+    <RootNamespace>AdminBilling</RootNamespace>
+    <AssemblyName>AdminBilling</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AdminBilling.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AdminBilling.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassAuth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ClassAuth\ClassAuth\bin\Debug\ClassAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Cr2015, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>P:\Project\Reestr\Reestr\bin\Debug\Cr2015.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedControls">
+      <HintPath>..\..\..\..\..\..\Downloads\DataGridViewMaskedText\ExtendedControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Readini, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Readini\Readini\bin\Debug\Readini.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassVvod.vb" />
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.vb">
+      <DependentUpon>FormAdmin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuilds.Designer.vb">
+      <DependentUpon>FormBuilds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuilds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuildsAdd.Designer.vb">
+      <DependentUpon>FormBuildsAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuildsAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCities.Designer.vb">
+      <DependentUpon>FormCities.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCities.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCounters.Designer.vb">
+      <DependentUpon>FormCounters.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCounters.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCountersAdd.Designer.vb">
+      <DependentUpon>FormCountersAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCountersAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDbCreateBackap.Designer.vb">
+      <DependentUpon>FormDbCreateBackap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDbCreateBackap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDbRestoreBackap.Designer.vb">
+      <DependentUpon>FormDbRestoreBackap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDbRestoreBackap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExcel.Designer.vb">
+      <DependentUpon>FormExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFlatsAdd.Designer.vb">
+      <DependentUpon>FormFlatsAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlatsAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLS.Designer.vb">
+      <DependentUpon>FormLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLSAdd.Designer.vb">
+      <DependentUpon>FormLSAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLSAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLSAdres.Designer.vb">
+      <DependentUpon>FormLSAdres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLSAdres.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLSCounter.Designer.vb">
+      <DependentUpon>FormLSCounter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLSCounter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLSUser.Designer.vb">
+      <DependentUpon>FormLSUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLSUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpers.Designer.vb">
+      <DependentUpon>FormOpers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpersAdd.Designer.vb">
+      <DependentUpon>FormOpersAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpersAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpersRoles.Designer.vb">
+      <DependentUpon>FormOpersRoles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpersRoles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpersRolesAdd.Designer.vb">
+      <DependentUpon>FormOpersRolesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpersRolesAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationTypes.Designer.vb">
+      <DependentUpon>FormRegistrationTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrationTypesAdd.Designer.vb">
+      <DependentUpon>FormRegistrationTypesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrationTypesAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelationsTypes.Designer.vb">
+      <DependentUpon>FormRelationsTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelationsTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelationsTypesAdd.Designer.vb">
+      <DependentUpon>FormRelationsTypesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelationsTypesAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoles.Designer.vb">
+      <DependentUpon>FormRoles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRolesAdd.Designer.vb">
+      <DependentUpon>FormRolesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRolesAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRoomsAdd.Designer.vb">
+      <DependentUpon>FormRoomsAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormRoomsAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServices.Designer.vb">
+      <DependentUpon>FormServices.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormServices.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServicesAdd.Designer.vb">
+      <DependentUpon>FormServicesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormServicesAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServicesUnitsTypes.Designer.vb">
+      <DependentUpon>FormServicesUnitsTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormServicesUnitsTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServicesUnitsTypesAdd.Designer.vb">
+      <DependentUpon>FormServicesUnitsTypesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormServicesUnitsTypesAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStreetAdd.Designer.vb">
+      <DependentUpon>FormStreetAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormStreetAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStreets.Designer.vb">
+      <DependentUpon>FormStreets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormStreets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFlats.Designer.vb">
+      <DependentUpon>FormFlats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormFlats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuppliers.Designer.vb">
+      <DependentUpon>FormSuppliers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuppliers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuppliersAdd.Designer.vb">
+      <DependentUpon>FormSuppliersAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuppliersAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuppliersPayee.Designer.vb">
+      <DependentUpon>FormSuppliersPayee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuppliersPayee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSuppliersPayeeAdd.Designer.vb">
+      <DependentUpon>FormSuppliersPayeeAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSuppliersPayeeAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTarifs.Designer.vb">
+      <DependentUpon>FormTarifs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTarifs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTarifsAdd.Designer.vb">
+      <DependentUpon>FormTarifsAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTarifsAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTech.Designer.vb">
+      <DependentUpon>FormTech.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTech.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTechAdd.Designer.vb">
+      <DependentUpon>FormTechAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTechAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsers.Designer.vb">
+      <DependentUpon>FormUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersAdd.Designer.vb">
+      <DependentUpon>FormUsersAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersDocks.Designer.vb">
+      <DependentUpon>FormUsersDocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersDocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersDocksAdd.Designer.vb">
+      <DependentUpon>FormUsersDocksAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersDocksAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersDocksTypes.Designer.vb">
+      <DependentUpon>FormUsersDocksTypes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersDocksTypes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsersDocksTypesAdd.Designer.vb">
+      <DependentUpon>FormUsersDocksTypesAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsersDocksTypesAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniFile.vb" />
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuilds.resx">
+      <DependentUpon>FormBuilds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuildsAdd.resx">
+      <DependentUpon>FormBuildsAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCities.resx">
+      <DependentUpon>FormCities.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCounters.resx">
+      <DependentUpon>FormCounters.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCountersAdd.resx">
+      <DependentUpon>FormCountersAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDbCreateBackap.resx">
+      <DependentUpon>FormDbCreateBackap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDbRestoreBackap.resx">
+      <DependentUpon>FormDbRestoreBackap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExcel.resx">
+      <DependentUpon>FormExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFlats.resx">
+      <DependentUpon>FormFlats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFlatsAdd.resx">
+      <DependentUpon>FormFlatsAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLS.resx">
+      <DependentUpon>FormLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLSAdd.resx">
+      <DependentUpon>FormLSAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLSAdres.resx">
+      <DependentUpon>FormLSAdres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLSCounter.resx">
+      <DependentUpon>FormLSCounter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLSUser.resx">
+      <DependentUpon>FormLSUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpers.resx">
+      <DependentUpon>FormOpers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpersAdd.resx">
+      <DependentUpon>FormOpersAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpersRoles.resx">
+      <DependentUpon>FormOpersRoles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpersRolesAdd.resx">
+      <DependentUpon>FormOpersRolesAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationTypes.resx">
+      <DependentUpon>FormRegistrationTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrationTypesAdd.resx">
+      <DependentUpon>FormRegistrationTypesAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelationsTypes.resx">
+      <DependentUpon>FormRelationsTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelationsTypesAdd.resx">
+      <DependentUpon>FormRelationsTypesAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoles.resx">
+      <DependentUpon>FormRoles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRolesAdd.resx">
+      <DependentUpon>FormRolesAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRoomsAdd.resx">
+      <DependentUpon>FormRoomsAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServices.resx">
+      <DependentUpon>FormServices.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServicesAdd.resx">
+      <DependentUpon>FormServicesAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServicesUnitsTypes.resx">
+      <DependentUpon>FormServicesUnitsTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServicesUnitsTypesAdd.resx">
+      <DependentUpon>FormServicesUnitsTypesAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStreetAdd.resx">
+      <DependentUpon>FormStreetAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStreets.resx">
+      <DependentUpon>FormStreets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuppliers.resx">
+      <DependentUpon>FormSuppliers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuppliersAdd.resx">
+      <DependentUpon>FormSuppliersAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuppliersPayee.resx">
+      <DependentUpon>FormSuppliersPayee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSuppliersPayeeAdd.resx">
+      <DependentUpon>FormSuppliersPayeeAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTarifs.resx">
+      <DependentUpon>FormTarifs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTarifsAdd.resx">
+      <DependentUpon>FormTarifsAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTech.resx">
+      <DependentUpon>FormTech.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTechAdd.resx">
+      <DependentUpon>FormTechAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsers.resx">
+      <DependentUpon>FormUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersAdd.resx">
+      <DependentUpon>FormUsersAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersDocks.resx">
+      <DependentUpon>FormUsersDocks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersDocksAdd.resx">
+      <DependentUpon>FormUsersDocksAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersDocksTypes.resx">
+      <DependentUpon>FormUsersDocksTypes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsersDocksTypesAdd.resx">
+      <DependentUpon>FormUsersDocksTypesAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdminBilling.ini" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
