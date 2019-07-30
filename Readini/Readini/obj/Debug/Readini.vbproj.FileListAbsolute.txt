@@ -1,0 +1,9 @@
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\obj\Debug\Readini.Resources.resources
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\obj\Debug\Readini.vbproj.GenerateResource.Cache
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\obj\Debug\Readini.xml
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\bin\Debug\Readini.dll
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\bin\Debug\Readini.pdb
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\bin\Debug\Readini.xml
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\obj\Debug\Readini.dll
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\obj\Debug\Readini.pdb
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\Readini\Readini\obj\Debug\Readini.vbprojResolveAssemblyReference.cache
