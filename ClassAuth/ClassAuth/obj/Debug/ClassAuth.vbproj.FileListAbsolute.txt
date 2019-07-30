@@ -1,0 +1,10 @@
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\bin\Debug\ClassAuth.dll
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\bin\Debug\ClassAuth.pdb
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\bin\Debug\ClassAuth.xml
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\obj\Debug\ClassAuth.Resources.resources
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\obj\Debug\ClassAuth.vbproj.GenerateResource.Cache
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\obj\Debug\ClassAuth.dll
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\obj\Debug\ClassAuth.xml
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\obj\Debug\ClassAuth.pdb
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\obj\Debug\ClassAuth.vbprojResolveAssemblyReference.cache
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\ClassAuth\ClassAuth\bin\Debug\Cr2015.dll
