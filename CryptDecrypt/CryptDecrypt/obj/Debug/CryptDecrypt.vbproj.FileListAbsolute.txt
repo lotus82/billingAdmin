@@ -1,0 +1,12 @@
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\bin\Debug\CryptDecrypt.exe.config
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\bin\Debug\CryptDecrypt.exe
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\bin\Debug\CryptDecrypt.pdb
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\bin\Debug\CryptDecrypt.xml
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\bin\Debug\Cr2015.dll
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\obj\Debug\CryptDecrypt.vbprojResolveAssemblyReference.cache
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\obj\Debug\CryptDecrypt.Form1.resources
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\obj\Debug\CryptDecrypt.Resources.resources
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\obj\Debug\CryptDecrypt.vbproj.GenerateResource.Cache
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\obj\Debug\CryptDecrypt.exe
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\obj\Debug\CryptDecrypt.xml
+C:\Users\suhov.d\Source\Workspaces\Рабочая область\MIRC\AdminBilling\CryptDecrypt\CryptDecrypt\obj\Debug\CryptDecrypt.pdb
