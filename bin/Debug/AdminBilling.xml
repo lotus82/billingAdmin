@@ -1,0 +1,98 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AdminBilling
+</name>
+</assembly>
+<members>
+<member name="T:AdminBilling.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:AdminBilling.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:AdminBilling.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="P:AdminBilling.My.Resources.Resources.FlatImage">
+<summary>
+  Ищет локализованную строку, похожую на .
+</summary>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.WritePrivateProfileString(System.String,System.String,System.String,System.String)">
+ <summary>
+ Записывает ключ в заданный раздел INI-файла.
+ </summary>
+ <param name="section">Имя раздела.</param>
+ <param name="key">Имя ключа.</param>
+ <param name="value">Значение ключа.</param>
+ <param name="filePath">Путь к INI-файлу.</param>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.GetPrivateProfileString(System.String,System.String,System.String,System.Text.StringBuilder,System.Int32,System.String)">
+ <summary>
+ Считывает ключ заданного раздела INI-файла.
+ </summary>
+ <param name="section">Имя раздела.</param>
+ <param name="key">Имя ключа.</param>
+ <param name="[default]"></param>
+ <param name="retVal"></param>
+ <param name="size"></param>
+ <param name="filePath">Путь к INI-файлу.</param>
+ <remarks>С помощью конструктора записываем путь до файла и его имя. </remarks>
+</member>
+<member name="F:AdminBilling.Ini.IniFile.IniPath">
+ <summary>
+ Имя файла.
+ </summary>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.#ctor(System.String)">
+ <summary>
+ Читаем ini-файл и возвращаем значение указного ключа из заданной секции. 
+ </summary>
+ <param name="iniPath"></param>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.KeyExists(System.String,System.String)">
+ <summary>
+ Проверяет, что заданный ключ существует в INI-файле.
+ </summary>
+ <param name="section">Имя раздела.</param>
+ <param name="key">Имя ключа.</param>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.ReadKey(System.String,System.String)">
+ <summary>
+ Читает значение заданного ключа в заданном разделе INI-файла.
+ </summary>
+ <param name="section">Имя раздела.</param>
+ <param name="key">Имя ключа.</param>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.WriteKey(System.String,System.String,System.String)">
+ <summary>
+ Создаёт заданный ключ в заданном разделе. Если раздел не существует, он будет создан.
+ </summary>
+ <param name="section">Имя раздела.</param>
+ <param name="key">Имя ключа.</param>
+ <param name="value">Значение ключа. Если NULL, то ключ будет удалён. Если String.Empty, то присвоится пустое значение.</param>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.DeleteKey(System.String,System.String)">
+ <summary>
+ Удаляет заданный ключ из заданного раздела INI-файла.
+ </summary>
+ <param name="section">Имя раздела.</param>
+ <param name="key">Имя ключа.</param>
+</member>
+<member name="M:AdminBilling.Ini.IniFile.DeleteSection(System.String)">
+ <summary>
+ Удаляет заданный раздел INI-файла.
+ </summary>
+ <param name="section">Имя раздела.</param>
+</member>
+</members>
+</doc>
